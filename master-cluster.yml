@@ -1,4 +1,4 @@
-- hosts: Kubernetes_Master
+- hosts: Master
   become: yes
   tasks:
     - name: Start the cluster
