@@ -1,4 +1,4 @@
-- hosts: Kubernetes_Servers
+- hosts: all
   become: yes
   tasks:
    - name: Docker Installation
@@ -34,7 +34,7 @@
        name: kubeadm=1.18.3-00
        state: present
 
-- hosts: Kubernetes_Master
+- hosts: Master
   become: yes
   tasks:
    - name: install kubectl
