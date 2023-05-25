@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    storage_account_name = "finalpoc1185"
-    container_name       = "tfstate"
+    storage_account_name = "pocprojectstorageac"
+    container_name       = "poccontainer"
     key                  = "terraform.tfstate"
-    resource_group_name = "Final_POC"
+    resource_group_name = "pocprojectrg"
   }
 }
