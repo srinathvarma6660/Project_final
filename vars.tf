@@ -1,12 +1,12 @@
 variable "location" {
     type = string
-    default = "West Europe"
+    default = "East US"
   
 }
 
 variable "resource_group_name" {
     type = string
-    default = "Final_POC"
+    default = "pocprojectrg"
   
 }
 variable "environment" {
