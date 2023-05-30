@@ -1,0 +1,35 @@
+---
+- name: Run Kubernetes Manifest
+  hosts: Master
+  become: true
+  tasks:
+    - name: Clone Git Repository
+      git:
+        repo: https://github.com/sharonraju143/Project_final.git
+        dest: /home/ubuntu/kubernetes
+        force: yes
+      become: false
+      remote_user: ubuntu
+      
+    - name: Set permissions for the cloned directory
+      file:
+        path: /home/ubuntu/kubernetes
+        state: directory
+        owner: ubuntu
+        group: ubuntu
+        mode: "0755"
+        
+    - name: Set execute permission for deploy script
+      file:
+        path: /home/ubuntu/kubernetes/deploy.sh
+        state: file
+        owner: ubuntu
+        group: ubuntu
+        mode: "0755"
+        
+    - name: Execute deploy script
+      command: /home/ubuntu/kubernetes/deploy.sh
+      args:
+        chdir: /home/ubuntu/kubernetes
+      become: false
+      remote_user: ubuntu
