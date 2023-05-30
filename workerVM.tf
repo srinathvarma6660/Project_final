@@ -12,8 +12,7 @@ resource "azurerm_linux_virtual_machine" "worker-vm" {
   admin_ssh_key {
     username   = "ubuntu"
     #public_key = file("~/.ssh/id_rsa.pub")
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9a7RmDaSx4Z65d6dnqE/NxPtSi+JkU8ZGXmdFQmwYMTp380VbAxyIEqH13smrhLaEuSexKzdJnbGv+n4lqOIjor3bf9sppzIpA/rkCBrnQDsdaE6d0ufjgEu0vg46cYMP4efHS17GSob70X5VmFXujOmhcE6/kQrCFg6V9pwxQZ13HFTZsam+Qb2Hg2PR5zLQ/54muwh0hsmahFH0DCVBmGoHpsxbpftS9t3YtWspm8WszzLrkfE+VRXSdM1W9eLF33LfRCam+1iL8gJ48/qR/Iz5NsntuGf6sfSoVszWxBX8IA2Yyk2okLE8iEqoZh8I7n3GT938hMMplIwrIxolpjevkgEwuqCNge6G4pg8hzMWn/Lrub//Yc7M/cH8MJ35hx21XU0nBJaCb9TaQQo4O/QpjoGJlXnYyCNKhJTgfuTNK5X/WCaL8Wnm82EYw3FrAx1TaBzW5Mjxf+6SFjom8ccU5eREGERK8RDITbF1JxnC/5qe7iXQWKEnlqVUoR0= azureuser@practicejenkins"
-
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzgUxXfZi352QnTJWwj2aO2Q4mSdsPkfUnqjIKdCKFDRebqbmYHC+SiiRGGMIwoKveWRDRe5zX9ov2Ywc0+Ty+nB6lGPeiXb9LtjGLN075FP9h/5uavDn36g9qlwr/PMPlBDHd4ifmOU4iqzo3RUlghTvR25qIWxJZOVOkRkJw0exLV/noLn4NsIUQec2/JH44PLYkpoEm7Dc6UeCz5aJlEm0CUXCKsaFRe3qInc/kXENbiitwc9QCBjgXxWQQk7h17axjAm9LIhPNdBE5JlpBrb/nFVXWE9psAOaouGzdSmjFWHQVO2phKOwskTePM6TISgHlKi/bIAJHrlq5ShBoug68kEt2dQR9s/HDiv9HZgrLsZ+0MhUUn7AS5xZT2AdQLYvPJXD7rsrWj1ko1B7BBJPCqxK0PiFsjrgxu6HX8A9qbdIcUurw03dWZ1P9+imL5Gh1Dd+AbRDLn3yHtXoKLEVesyXwJveAd3rYj2lHaH+fh91ckk/w9xoEm6bxsgU= azureuser@demojenkins"
 
   }
 
